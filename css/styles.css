@@ -1,3 +1,11 @@
+/*Colores Logo*/
+:root {
+    --color-azul: #2E4A7D; /* Azul de las manos del logo */
+    --color-purpura: #6C2463; /* Púrpura predominante */
+    --color-rosa: #B94D8B; /* Rosa secundario */
+    --color-rosado-claro: #EDE7EB; /* Rosado claro para fondos */
+    --color-gris-oscuro: #333; /* Gris oscuro para texto */
+}
 /* Estilos básicos */
 body {
     font-family: Arial, sans-serif; /* Cambia la fuente de la página */
@@ -9,8 +17,8 @@ body {
 
 /* Estilos del encabezado */
 header {
-    background-color: #4a90e2; /* Color de fondo del encabezado */
-    color: white; /* Color del texto en el encabezado */
+    background-color: #B94D8B; /* Color de fondo del encabezado */
+    color: #120ab3; /* Color del texto en el encabezado */
     padding: 20px; /* Espaciado interno */
     text-align: center; /* Centrar el texto */
 }
