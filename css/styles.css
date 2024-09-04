@@ -204,3 +204,79 @@ footer {
         width: 90%;
     }
 }
+#servicios {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#servicios h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#servicios p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+.servicios-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.servicios-lista li {
+    background: #f0f8ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-size: 1em;
+    color: #444;
+}
+
+.servicios-lista li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+/* Estilo para el encabezado */
+.servicios-encabezado {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.servicios-encabezado h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.servicios-encabezado p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Estilo para la lista de servicios */
+.servicios-lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.servicios-lista li {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.servicios-lista li:hover {
+    color: #007bff; /* Cambia el color al pasar el ratón */
+    transform: translateY(-5px); /* Efecto de desplazamiento */
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RenaSer</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -29,23 +30,26 @@
     </section>
     
     <section id="servicios">
-        <h2>Servicios</h2>
-        <p><strong>Terapia Cognitivo Conductual</strong></p>
-        <p>Atención psicológica especializada en:</p>
-        <ul>
-            <li>Niños, adolescentes, adultos, parejas y familias.</li>
-            <li>Estrés</li>
-            <li>Ansiedad</li>
-            <li>Depresión</li>
-            <li>Ataques de pánico</li>
-            <li>Autoestima</li>
-            <li>Relaciones conflictivas</li>
-            <li>Comunicación</li>
-            <li>Manejo de emociones</li>
-            <li>Resolución de conflictos</li>
-            <li>Otros trastornos y problemáticas.</li>
+        <div class="servicios-encabezado">
+            <h2>Servicios Especializados</h2>
+            <p>Brindamos atención psicológica personalizada con enfoque en:</p>
+        </div>
+        <ul class="servicios-lista">
+            <li data-aos="fade-up">Terapia Cognitivo Conductual</li>
+            <li data-aos="fade-up" data-aos-delay="100">Niños, adolescentes, adultos, parejas y familias.</li>
+            <li data-aos="fade-up" data-aos-delay="200">Estrés</li>
+            <li data-aos="fade-up" data-aos-delay="300">Ansiedad</li>
+            <li data-aos="fade-up" data-aos-delay="400">Depresión</li>
+            <li data-aos="fade-up" data-aos-delay="500">Ataques de pánico</li>
+            <li data-aos="fade-up" data-aos-delay="600">Relaciones conflictivas</li>
+            <li data-aos="fade-up" data-aos-delay="700">Comunicación</li>
+            <li data-aos="fade-up" data-aos-delay="800">Manejo de emociones</li>
+            <li data-aos="fade-up" data-aos-delay="900">Resolución de conflictos</li>
+            <li data-aos="fade-up" data-aos-delay="1000">Otros trastornos y problemáticas</li>
         </ul>
     </section>
+    
+    
     <section id="contacto">
         <h2>Contacto</h2>
         <p class="intro-contacto">Agenda tu cita y da el primer paso hacia un nuevo comienzo con <strong>RenaSer</strong></p>
@@ -64,10 +68,13 @@
             </div>
         </div>
     </section>
-    
-
     <footer>
         <p>Ubicación y derechos reservados</p>
     </footer>
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </html>
