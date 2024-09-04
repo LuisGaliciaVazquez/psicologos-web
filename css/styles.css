@@ -2,7 +2,7 @@
     --color-azul: #2E4A7D; /* Azul de las manos del logo */
     --color-purpura: #6C2463; /* Púrpura predominante */
     --color-rosa: #B94D8B; /* Rosa secundario */
-    --color-rosado-claro: #EDE7EB; /* Rosado claro para fondos */
+    --color-rosado-claro: #e0cbd9; /* Rosado claro para fondos */
     --color-gris-oscuro: #333; /* Gris oscuro para texto */
 }
 /* Reset básico */
@@ -18,7 +18,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #ccddf5;
+    background-color: #c3d6ee;
 }
 
 /* Header */
