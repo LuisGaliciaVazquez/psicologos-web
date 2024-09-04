@@ -1,3 +1,10 @@
+:root {
+    --color-azul: #2E4A7D; /* Azul de las manos del logo */
+    --color-purpura: #6C2463; /* Púrpura predominante */
+    --color-rosa: #B94D8B; /* Rosa secundario */
+    --color-rosado-claro: #EDE7EB; /* Rosado claro para fondos */
+    --color-gris-oscuro: #333; /* Gris oscuro para texto */
+}
 /* Reset básico */
 * {
     margin: 0;
@@ -11,12 +18,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f7f7f7;
+    background-color: #ccddf5;
 }
 
 /* Header */
 header {
-    background: #fff;
+    background: #EDE7EB;
     padding: 20px 0;
     text-align: center;
     border-bottom: 2px solid #ddd;
