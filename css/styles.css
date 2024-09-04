@@ -8,10 +8,10 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif; /* Asegúrate de usar la misma fuente que deseas */
+    font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333; /* Color de texto general */
-    background-color: #f7f7f7; /* Color de fondo general */
+    color: #333;
+    background-color: #f7f7f7;
 }
 
 /* Header */
@@ -23,7 +23,7 @@ header {
 }
 
 header img#logo {
-    max-width: 150px; /* Ajusta el tamaño del logo */
+    max-width: 150px;
     margin-bottom: 10px;
 }
 
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #007BFF; /* Añadir un efecto hover */
+    color: #007BFF;
 }
 
 /* Secciones */
@@ -96,43 +96,6 @@ section ul li {
 }
 
 /* Sección de contacto específica */
-#contacto .horario-atencion {
-    background: #f0f0f0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Responsivo */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-
-    header p {
-        font-size: 1.2em;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-/* Estilos para la sección de contacto */
 #contacto {
     text-align: center;
 }
@@ -195,6 +158,22 @@ footer {
 
 /* Responsivo */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
     .contacto-contenido {
         flex-direction: column;
         align-items: center;
@@ -204,20 +183,39 @@ footer {
         width: 90%;
     }
 }
+
+/* Estilos para la sección de servicios */
 #servicios {
     padding: 40px 20px;
     text-align: center;
 }
 
-#servicios h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
+.servicios-encabezado {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-#servicios p {
+.servicios-encabezado h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.texto-destacado-container {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.texto-destacado {
     font-size: 1.2em;
-    color: #555;
+    color: #666; /* Color original */
+    font-weight: bold;
+    margin: 0;
 }
 
 .servicios-lista {
@@ -236,47 +234,11 @@ footer {
     border-radius: 5px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #444;
 }
 
 .servicios-lista li:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-/* Estilo para el encabezado */
-.servicios-encabezado {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.servicios-encabezado h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.servicios-encabezado p {
-    font-size: 1.2em;
-    color: #666;
-}
-
-/* Estilo para la lista de servicios */
-.servicios-lista {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.servicios-lista li {
-    font-size: 1.1em;
-    color: #444;
-    margin-bottom: 10px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.servicios-lista li:hover {
-    color: #007bff; /* Cambia el color al pasar el ratón */
-    transform: translateY(-5px); /* Efecto de desplazamiento */
 }
