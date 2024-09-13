@@ -249,3 +249,73 @@ section ul li {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+/* Sección de Instalaciones */
+#instalaciones {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+#instalaciones h2 {
+    font-size: 2em;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.galeria-img {
+    width: calc(33.33% - 10px);
+    max-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.galeria-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de Ubicación */
+#ubicacion {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #EDE7EB;
+}
+
+#ubicacion h2 {
+    font-size: 2em;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#ubicacion p {
+    font-size: 1.2em;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.btn-ubicacion {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ubicacion:hover {
+    background-color: #0056b3;
+}
+
