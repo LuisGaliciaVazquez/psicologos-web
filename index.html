@@ -64,7 +64,7 @@
             <h2>¿Dónde Nos Encontramos?</h2>
             <p>Visítanos en nuestra ubicación y conoce más sobre nuestros servicios.</p>
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15052.126926623845!2d-99.0707215!3d19.4110349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1fd9febebd547%3A0xa8cacd5a54358ef8!2zQ2VudHJvIEludGVncmFsIGRlIFBzaWNvbG9nw61hIOKAnFJlbmFTZXLigJ0!5e0!3m2!1ses-419!2smx!4v1726950920219!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <a href="https://maps.app.goo.gl/3Muux81HA3NqPzbs8"_blank" class="btn-ubicacion">Ver en Google Maps</a>
+            <a href="https://maps.app.goo.gl/3Muux81HA3NqPzbs8 target="_blank" class="btn-ubicacion">Ver en Google Maps</a>
         </section>
         
         <section id="contacto">
@@ -81,9 +81,65 @@
                 <div class="info-contacto">
                     <h3>Contáctanos:</h3>
                     <p><strong>WhatsApp:</strong> <a href="https://wa.me/525545066089" target="_blank">55 4506 6089</a></p>
-                    <button class="btn-agendar">Agenda tu Cita</button>
+                    <button class="btn-agendar" onclick="toggleFormulario()">Agenda tu Cita</button>
                 </div>
-            </div>
+                
+                <div id="formulario-cita" style="display:none; margin-top:20px;">
+                    <h4>Completa tus datos para agendar:</h4>
+                    <form id="form-cita">
+                        <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br><br>
+                        
+                        <label for="email">Correo electrónico:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+                        
+                        <label for="telefono">Teléfono:</label><br>
+                        <input type="tel" id="telefono" name="telefono" required><br><br>
+                
+                        <label for="mensaje">Mensaje:</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="4" required>Hola, me gustaría agendar una cita.</textarea><br><br>
+                
+                        <button type="button" onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+                        <button type="button" onclick="enviarCorreo()">Enviar por Correo</button>
+                    </form>
+                </div>
+                
+                <script>
+                function toggleFormulario() {
+                    var formulario = document.getElementById('formulario-cita');
+                    formulario.style.display = formulario.style.display === 'none' ? 'block' : 'none';
+                }
+                
+                function enviarWhatsApp() {
+                    var nombre = document.getElementById('nombre').value;
+                    var telefono = document.getElementById('telefono').value;
+                    var mensaje = document.getElementById('mensaje').value;
+                    
+                    var url = "https://wa.me/525545066089?text=" 
+                            + "Nombre: " + encodeURIComponent(nombre) 
+                            + "%0ATeléfono: " + encodeURIComponent(telefono)
+                            + "%0AMensaje: " + encodeURIComponent(mensaje);
+                    
+                    window.open(url, '_blank');
+                }
+                
+                function enviarCorreo() {
+                    var nombre = document.getElementById('nombre').value;
+                    var email = document.getElementById('email').value;
+                    var telefono = document.getElementById('telefono').value;
+                    var mensaje = document.getElementById('mensaje').value;
+                    
+                    var asunto = "Solicitud de cita - " + nombre;
+                    var body = "Nombre: " + nombre + "%0A" 
+                             + "Correo: " + email + "%0A"
+                             + "Teléfono: " + telefono + "%0A"
+                             + "Mensaje: " + mensaje;
+                    
+                    window.location.href = "mailto:tucorreo@dominio.com?subject=" + encodeURIComponent(asunto) + "&body=" + encodeURIComponent(body);
+                }
+                </script>
+                
+                
         </section>
         <footer>
             <p>Ubicación y derechos reservados</p>
